@@ -46,7 +46,7 @@ public class HelloSpringController {
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public String login(String username, HttpSession session){
-        session.setAttribute("username", username);
+        session.setAttribute("username", username);             //must match the html usage exactly
         return "redirect:/";                                     //redirects back to the "/" route
 
     }

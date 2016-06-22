@@ -18,6 +18,13 @@ public class Person {
         this.age = age;
     }
 
+    public Person() {
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }
@@ -38,7 +45,4 @@ public class Person {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 }
